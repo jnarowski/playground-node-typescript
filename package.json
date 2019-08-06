@@ -1,6 +1,7 @@
 {
   "name": "heroku-typescript",
   "scripts": {
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts",
     "ts:watch": "tsc -w",
     "ts:build": "tsc",
     "serve": "nodemon dist/server.js",
@@ -15,12 +16,15 @@
     "@types/node": "^8.0.16",
     "@types/winston": "^2.3.4",
     "express": "^4.15.3",
+    "npm-run-all": "^4.1.5",
+    "ts-node-dev": "^1.0.0-pre.40",
     "typescript": "^2.4.2",
     "winston": "^2.3.1"
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
-    "nodemon": "^1.11.0",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0",
     "tslint": "^5.5.0"
   }
 }
